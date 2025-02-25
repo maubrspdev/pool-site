@@ -123,7 +123,7 @@ const config: Config = tseslint.config(
   },
   // Rules for React files
   {
-    files: ['{packages,examples,docs}/**'],
+    files: ['{packages,apps,docs}/**'],
     plugins: {
       'react-hooks': eslintPluginReactHooks,
       '@next/next': eslintPluginNext
@@ -305,36 +305,36 @@ const config: Config = tseslint.config(
       next: { rootDir: 'docs' }
     }
   },
-  // ⚙️ SWR-site example
+  // ⚙️ pool-site example
   {
     // ...TAILWIND_CONFIG,
-    files: ['examples/swr-site/**'],
+    files: ['apps/pool-site/**'],
     settings: {
       tailwindcss: {
         cssFiles: [
-          'examples/swr-site/app/[lang]/styles.css',
-          'examples/swr-site/app/_components/features.css',
+          'apps/pool-site/app/[lang]/styles.css',
+          'apps/pool-site/app/_components/features.css',
           'packages/nextra-theme-docs/dist/style.css'
         ],
         whitelist: [
           '.*nextra-focus' // I can't ignore colon `:`, use `*` instead
         ]
       },
-      next: { rootDir: 'examples/swr-site' }
+      next: { rootDir: 'apps/pool-site' }
     }
   },
   // ⚙️ blog example
   {
-    files: ['examples/blog/**'],
+    files: ['apps/blog/**'],
     settings: {
-      next: { rootDir: 'examples/blog' }
+      next: { rootDir: 'apps/blog' }
     }
   },
   // ⚙️ docs example
   {
-    files: ['examples/docs/**'],
+    files: ['apps/docs/**'],
     settings: {
-      next: { rootDir: 'examples/docs' }
+      next: { rootDir: 'apps/docs' }
     }
   },
   {

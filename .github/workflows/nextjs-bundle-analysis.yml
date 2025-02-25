@@ -16,7 +16,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        package: ['examples/swr-site', docs]
+        package: ['apps/pool-site', docs]
 
     steps:
       - name: Cancel Previous Runs
@@ -72,14 +72,14 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           # Check since we can't use slashes in name
-          name: bundle-${{ matrix.package == 'docs' && 'docs' || 'swr-site' }}
+          name: bundle-${{ matrix.package == 'docs' && 'docs' || 'pool-site' }}
           path: ${{ matrix.package }}/.next/analyze/__bundle_analysis.json
 
       - name: Download Base Branch Bundle Stats
         uses: dawidd6/action-download-artifact@v8
         if: success() && github.event.number
         with:
-          name: bundle-${{ matrix.package == 'docs' && 'docs' || 'swr-site' }}
+          name: bundle-${{ matrix.package == 'docs' && 'docs' || 'pool-site' }}
           workflow: nextjs-bundle-analysis.yml
           branch: ${{ github.event.pull_request.base.ref }}
           path: ${{ matrix.package }}/.next/analyze/base/bundle

@@ -6,7 +6,7 @@ import { convertToPageMap } from '../page-map/to-page-map.js'
 
 describe('generatePageMap()', () => {
   it('should work for blog example', async () => {
-    const cwd = path.join(CWD, '..', '..', 'examples', 'blog')
+    const cwd = path.join(CWD, '..', '..', 'apps', 'blog')
     const filePaths = await findMetaAndPageFilePaths({
       dir: path.join(cwd, 'app'),
       cwd
@@ -861,7 +861,7 @@ describe('generatePageMap()', () => {
   })
 
   describe('should work for docs example', async () => {
-    const cwd = path.join(CWD, '..', '..', 'examples', 'docs')
+    const cwd = path.join(CWD, '..', '..', 'apps', 'docs')
     const filePaths = await findMetaAndPageFilePaths({
       dir: path.join(cwd, 'src/app'),
       cwd,
@@ -1237,7 +1237,7 @@ describe('generatePageMap()', () => {
   })
 
   describe('should work for i18n example', async () => {
-    const cwd = path.join(CWD, '..', '..', 'examples', 'swr-site')
+    const cwd = path.join(CWD, '..', '..', 'apps', 'pool-site')
     const filePaths = await findMetaAndPageFilePaths({
       dir: path.join(cwd, 'app'),
       cwd,
@@ -1291,13 +1291,13 @@ describe('generatePageMap()', () => {
           "content/en/docs/understanding.mdx",
           "content/en/docs/with-nextjs.mdx",
           "content/en/docs/wrap-toc-items.mdx",
-          "content/en/examples/_meta.ts",
-          "content/en/examples/auth.mdx",
-          "content/en/examples/basic.mdx",
-          "content/en/examples/error-handling.mdx",
-          "content/en/examples/full.mdx",
-          "content/en/examples/infinite-loading.mdx",
-          "content/en/examples/ssr.mdx",
+          "content/en/apps/_meta.ts",
+          "content/en/apps/auth.mdx",
+          "content/en/apps/basic.mdx",
+          "content/en/apps/error-handling.mdx",
+          "content/en/apps/full.mdx",
+          "content/en/apps/infinite-loading.mdx",
+          "content/en/apps/ssr.mdx",
           "content/en/foo.md",
           "content/en/index.mdx",
           "content/en/test.md",
@@ -1354,12 +1354,12 @@ describe('generatePageMap()', () => {
           "docs/understanding": "docs/understanding.mdx",
           "docs/with-nextjs": "docs/with-nextjs.mdx",
           "docs/wrap-toc-items": "docs/wrap-toc-items.mdx",
-          "examples/auth": "examples/auth.mdx",
-          "examples/basic": "examples/basic.mdx",
-          "examples/error-handling": "examples/error-handling.mdx",
-          "examples/full": "examples/full.mdx",
-          "examples/infinite-loading": "examples/infinite-loading.mdx",
-          "examples/ssr": "examples/ssr.mdx",
+          "apps/auth": "apps/auth.mdx",
+          "apps/basic": "apps/basic.mdx",
+          "apps/error-handling": "apps/error-handling.mdx",
+          "apps/full": "apps/full.mdx",
+          "apps/infinite-loading": "apps/infinite-loading.mdx",
+          "apps/ssr": "apps/ssr.mdx",
           "foo": "foo.md",
           "test": "test.md",
         }
@@ -1606,37 +1606,37 @@ describe('generatePageMap()', () => {
           {
             "children": [
               {
-                "__metaPath": "content/en/examples/_meta.ts",
+                "__metaPath": "content/en/apps/_meta.ts",
               },
               {
-                "__pagePath": "content/en/examples/auth.mdx",
+                "__pagePath": "content/en/apps/auth.mdx",
                 "name": "auth",
-                "route": "/examples/auth",
+                "route": "/apps/auth",
               },
               {
-                "__pagePath": "content/en/examples/basic.mdx",
+                "__pagePath": "content/en/apps/basic.mdx",
                 "name": "basic",
-                "route": "/examples/basic",
+                "route": "/apps/basic",
               },
               {
-                "__pagePath": "content/en/examples/error-handling.mdx",
+                "__pagePath": "content/en/apps/error-handling.mdx",
                 "name": "error-handling",
-                "route": "/examples/error-handling",
+                "route": "/apps/error-handling",
               },
               {
-                "__pagePath": "content/en/examples/full.mdx",
+                "__pagePath": "content/en/apps/full.mdx",
                 "name": "full",
-                "route": "/examples/full",
+                "route": "/apps/full",
               },
               {
-                "__pagePath": "content/en/examples/infinite-loading.mdx",
+                "__pagePath": "content/en/apps/infinite-loading.mdx",
                 "name": "infinite-loading",
-                "route": "/examples/infinite-loading",
+                "route": "/apps/infinite-loading",
               },
               {
-                "__pagePath": "content/en/examples/ssr.mdx",
+                "__pagePath": "content/en/apps/ssr.mdx",
                 "name": "ssr",
-                "route": "/examples/ssr",
+                "route": "/apps/ssr",
               },
             ],
             "name": "examples",

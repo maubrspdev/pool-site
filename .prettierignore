@@ -3,9 +3,9 @@ pnpm-lock.yaml
 CHANGELOG.md
 generated-page-map.ts
 
-examples/swr-site/nextra-remote-filepaths/*.json
+apps/pool-site/nextra-remote-filepaths/*.json
 
-examples/docs/src/content/features/mdx.mdx
+apps/docs/src/content/features/mdx.mdx
 docs/app/docs/advanced/latex/page.mdx
 docs/app/docs/advanced/mermaid/page.mdx
 docs/app/docs/advanced/npm2yarn/page.mdx

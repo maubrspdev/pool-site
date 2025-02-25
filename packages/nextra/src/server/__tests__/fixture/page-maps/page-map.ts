@@ -160,35 +160,35 @@ export const usPageMap: PageMapItem[] = [
       },
       {
         name: 'auth',
-        route: '/examples/auth',
+        route: '/apps/auth',
         frontMatter: {
           title: 'Authentication'
         }
       },
       {
         name: 'basic',
-        route: '/examples/basic',
+        route: '/apps/basic',
         frontMatter: {
           title: 'Basic Usage'
         }
       },
       {
         name: 'error-handling',
-        route: '/examples/error-handling',
+        route: '/apps/error-handling',
         frontMatter: {
           title: 'Error Handling'
         }
       },
       {
         name: 'infinite-loading',
-        route: '/examples/infinite-loading',
+        route: '/apps/infinite-loading',
         frontMatter: {
           title: 'Infinite Loading'
         }
       },
       {
         name: 'ssr',
-        route: '/examples/ssr',
+        route: '/apps/ssr',
         frontMatter: {
           title: 'Next.js SSR'
         }

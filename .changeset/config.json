@@ -13,7 +13,7 @@
   "ignore": [
     "example-blog",
     "example-docs",
-    "swr-site",
+    "pool-site",
     "docs",
     "@nextra/prettier-config",
     "@nextra/eslint-config"

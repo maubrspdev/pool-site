@@ -15,7 +15,7 @@ import { MDXRemote } from 'nextra/mdx-remote'
 export async function MDXPathPage() {
   const filename = '[[...mdxPath]]/page.jsx'
   const rawMdx = `~~~jsx filename="${filename}" showLineNumbers
-${(await fs.readFile(`../examples/docs/src/app/docs/${filename}`, 'utf8'))
+${(await fs.readFile(`../apps/docs/src/app/docs/${filename}`, 'utf8'))
   .split('\n')
   .slice(2, -1)
   .join('\n')}
@@ -113,7 +113,7 @@ you should get the following structure:
 >   [static images](/docs/guide/image#static-image) works as well
 >
 > Checkout Nextra's
-> [docs website](https://github.com/shuding/nextra/tree/main/examples/docs) and
-> [i18n website example](https://github.com/shuding/nextra/tree/main/examples/swr-site).
+> [docs website](https://github.com/shuding/nextra/tree/main/apps/docs) and
+> [i18n website example](https://github.com/shuding/nextra/tree/main/apps/pool-site).
 
 </Steps>

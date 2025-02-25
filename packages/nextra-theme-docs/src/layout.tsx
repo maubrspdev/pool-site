@@ -62,7 +62,7 @@ const theme = z.strictObject({
     })
     .default({}),
   pageMap: z.array(z.any({})),
-  search: z.union([element, z.null()]).default(<Search />),
+  // search: z.union([element, z.null()]).default(<Search />),
   sidebar: z
     .strictObject({
       autoCollapse: z.boolean().optional(),

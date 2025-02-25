@@ -8,7 +8,7 @@ describe('tree shaking', async () => {
     '..',
     '..',
     'examples',
-    'swr-site',
+    'pool-site',
     '.next',
     'static',
     'chunks',

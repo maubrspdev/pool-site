@@ -10,7 +10,7 @@ import { MDXRemote } from 'nextra/mdx-remote'
 export async function Example() {
   const filename = '/graphql-eslint/[[...slug]]/page.tsx'
   const pageContent = await fs.readFile(
-    `../examples/swr-site/app/[lang]/${filename}`,
+    `../apps/pool-site/app/[lang]/${filename}`,
     'utf8'
   )
   const rawJs = await compileMdx(
@@ -32,7 +32,7 @@ ${pageContent
 > [!NOTE]
 >
 > You can check out the
-> [SWR i18n example](https://github.com/shuding/nextra/blob/main/examples/swr-site/app/%5Blang%5D/graphql-eslint/%5B%5B...slug%5D%5D/page.tsx)
+> [SWR i18n example](https://github.com/shuding/nextra/blob/main/apps/pool-site/app/%5Blang%5D/graphql-eslint/%5B%5B...slug%5D%5D/page.tsx)
 > source code.
 
 <Steps>

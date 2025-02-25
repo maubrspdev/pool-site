@@ -10,7 +10,7 @@ export const ExampleCode: FC<{
   example: string
 }> = async ({ filePath, metadata, example }) => {
   const pageContent = await fs.readFile(
-    `../examples/${example}/${filePath}`,
+    `../apps/${example}/${filePath}`,
     'utf8'
   )
   const ext = path.extname(filePath).slice(1)
